@@ -24,7 +24,7 @@ const char *mr_init_devices[] =
     "/sys/module/mmc_core",
     "/sys/module/mmcblk",
 
-    "/sys/devices/virtual/input*"
+    "/sys/devices/virtual/input*",
     "/sys/class/misc/uinput",
 
     // for adb

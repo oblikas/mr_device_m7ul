@@ -76,11 +76,10 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 TARGET_RECOVERY_INITRC := device/htc/m7ul/init.rc
 BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_HAS_LARGE_FILESYSTEM := tru
+BOARD_HAS_LARGE_FILESYSTEM := true
 
 # TWRP
 DEVICE_RESOLUTION := 1080x1920
-TW_INCLUDE_DUMLOCK := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"
@@ -89,9 +88,14 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "usb-otg"
 TW_NO_USB_STORAGE := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+HAVE_SELINUX := true
 
 #MultiROM config. MultiROM also uses parts of TWRP config
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/htc/m7ul/mr_init_devices.c
-MR_DPI := hdpi
+MR_DPI := xhdpi
 MR_FSTAB := device/htc/m7ul/twrp.fstab
+MR_USE_MROM_FSTAB := true
+MR_DEVICE_HOOKS := device/htc/m7ul/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 1
+MR_KEXEC_MEM_MIN := 0x85000000
