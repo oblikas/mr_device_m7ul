@@ -93,7 +93,7 @@ HAVE_SELINUX := true
 #MultiROM config. MultiROM also uses parts of TWRP config
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/htc/m7ul/mr_init_devices.c
-MR_DPI := hdpi
+MR_DPI := xhdpi
 MR_FSTAB := device/htc/m7ul/twrp.fstab
 MR_USE_MROM_FSTAB := true
 MR_DEVICE_HOOKS := device/htc/m7ul/mr_hooks.c
