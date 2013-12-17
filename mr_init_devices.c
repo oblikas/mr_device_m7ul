@@ -38,5 +38,8 @@ const char *mr_init_devices[] =
     // USB Drive is in here
     "/sys/devices/platform/msm_hsusb_host*",
 
+    // /dev/fuse
+    "/sys/devices/virtual/misc/fuse",
+
     NULL
 };
